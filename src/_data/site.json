@@ -1,0 +1,23 @@
+{
+  "name": "ITS Europe",
+  "legalName": "ITS Europe S.r.l.",
+  "tagline_it": "Telai serigrafici professionali dal 1984",
+  "tagline_en": "Professional screen-printing frames since 1984",
+  "url": "https://www.itseurope.it",
+  "logo": "/assets/logo.png",
+  "phone": "+39 0363 49321",
+  "email": "info@itseurope.it",
+  "address": {
+    "streetAddress": "Via Masano, 22/A",
+    "postalCode": "24047",
+    "addressLocality": "Treviglio",
+    "addressRegion": "BG",
+    "addressCountry": "IT"
+  },
+  "openingHours": "Mo-Fr 08:30-12:30,14:00-18:00",
+  "geo": {
+    "latitude": 45.524,
+    "longitude": 9.59
+  },
+  "vatNumber": "IT03077920167"
+}

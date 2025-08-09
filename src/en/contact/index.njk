@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Contact
+lang: en
+permalink: /en/contact/index.html
+---
+<h1>Contact</h1>
+
+<h2>Direct contacts</h2>
+<p>Email: <a href="mailto:info@itseurope.it">info@itseurope.it</a><br>
+Phone: <a href="tel:+39036349321">+39 0363 49321</a></p>
+
+<p>Write us for quotes or technical information.</p>
+
+
+
+<h2>Where we are</h2>
+<p>{{ site.address.streetAddress }}, {{ site.address.postalCode }} {{ site.address.addressLocality }} ({{ site.address.addressRegion }})</p>
+<div style="margin-top:12px">
+  <iframe title="ITS Europe location map" src="https://www.google.com/maps?q={{ site.address.streetAddress | urlencode }},%20{{ site.address.addressLocality | urlencode }}&output=embed" width="100%" height="380" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

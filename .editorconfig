@@ -1,0 +1,27 @@
+root = true
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+EOF~
+less .gitignore
+ls
+
+
+# .gitignore: evita di versionare build e dipendenze
+cat > .gitignore << 'EOF'
+# Node / Eleventy / Static build
+node_modules/
+_site/
+.cache/
+.DS_Store
+*.log
+dist/
+coverage/
+
+# OS / editor
+Thumbs.db
+.vscode/
+.idea/

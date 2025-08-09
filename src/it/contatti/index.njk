@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Contatti
+lang: it
+permalink: /it/contatti/index.html
+---
+<h1>Contatti</h1>
+
+<h2>Contatti diretti</h2>
+<p>Email: <a href="mailto:info@itseurope.it">info@itseurope.it</a><br>
+Telefono: <a href="tel:+39036349321">+39 0363 49321</a></p>
+
+<p>Scrivici per preventivi o informazioni tecniche.</p>
+
+
+
+<h2>Dove siamo</h2>
+<p>{{ site.address.streetAddress }}, {{ site.address.postalCode }} {{ site.address.addressLocality }} ({{ site.address.addressRegion }})</p>
+<div style="margin-top:12px">
+  <iframe title="Mappa sede ITS Europe" src="https://www.google.com/maps?q={{ site.address.streetAddress | urlencode }},%20{{ site.address.addressLocality | urlencode }}&output=embed" width="100%" height="380" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

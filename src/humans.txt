@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: ITS Europe Web
+Site: https://www.itseurope.it
+
+/* THANKS */
+Eleventy static site generator
+
+/* STANDARDS */
+Language: Italian, English
