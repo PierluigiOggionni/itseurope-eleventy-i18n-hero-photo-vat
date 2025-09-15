@@ -127,3 +127,8 @@ form .actions{margin-top:16px}
     display: none;
   }
 }
+.hero-text {
+  max-width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

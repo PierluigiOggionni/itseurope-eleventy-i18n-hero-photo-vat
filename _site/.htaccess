@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Redirect automatico dalla root (/) in base a Accept-Language
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{HTTP:Accept-Language} ^it [NC]
+RewriteRule ^$ /it/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ /en/ [R=301,L]
+
+# Best practice per caching/CDN e Google
+<IfModule mod_headers.c>
+  Header merge Vary Accept-Language
+</IfModule>
+
+# Canonicalizza index.html (evita duplicati)
+RewriteCond %{THE_REQUEST} \\s/+index\\.html[\\s?] [NC]
+RewriteRule ^(.*)index\\.html$ /$1 [R=301,L]
+
+# Directory index
+DirectoryIndex index.html
